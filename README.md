@@ -29,4 +29,17 @@ Shoeprize Project
         * API는 RESTfull 규칙을 준수합니다.
 ------------------------------------------------------------
 
+shoeprize 사전과제
+
+DRF APIView를 사용해서 RESTful한 API를 구현
+postman을 활용해 테스트 구현
+
+<img width="859" alt="스크린샷 2023-07-28 오후 6 11 43" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/5dcf6036-9a02-4ddc-be99-4a2bd2405ecb">
+
+<img width="856" alt="스크린샷 2023-07-28 오후 6 11 55" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/c8d7d945-062c-4c35-b085-ddc4b6cb2195">
+
+<img width="855" alt="스크린샷 2023-07-28 오후 6 12 02" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/742b0001-f24f-4c9c-99d7-a87e679eeec9">
+
+<img width="853" alt="스크린샷 2023-07-28 오후 6 12 09" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/c08d4b3a-e23f-47d9-a739-ed9113ff40dc">
+
 
