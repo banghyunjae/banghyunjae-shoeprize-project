@@ -9,8 +9,9 @@ class ManufactSerializer(serializers.ModelSerializer):
 
 
 class ProductSerializer(serializers.ModelSerializer):
-    manufact = ManufactSerializer()
+    manufact = serializers.PrimaryKeyRelatedField(queryset=Manufact.objects.all())
 
+    # manufact = ManufactSerializer(read_only=True)  # ManufactSerializer를 포함
     class Meta:
         model = Product
-        fields = ["id", "name", "name_en", "product_code", "manufact", "release_date", "price"]
+        exclude = ["admin_comment"]  # admin_comment를 제외
