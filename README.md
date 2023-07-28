@@ -31,9 +31,9 @@ Shoeprize Project
 
 shoeprize 사전과제
 
-DRF APIView를 사용해서 RESTful한 API를 구현
-관리자 코멘트는 blank, null = True 설정, 시리얼라이저에 미포함
-try, except를 활용 존재하지 않는 제조사, 제품의 UUID 가 있다면 404
+DRF APIView를 사용해서 RESTful한 API를 구현<br>
+관리자 코멘트는 blank, null = True 설정, 시리얼라이저에 미포함<br>
+try, except를 활용 존재하지 않는 제조사, 제품의 UUID 가 있다면 404<br>
 postman을 활용해 테스트 구현
 
 <img width="859" alt="스크린샷 2023-07-28 오후 6 11 43" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/5dcf6036-9a02-4ddc-be99-4a2bd2405ecb">
