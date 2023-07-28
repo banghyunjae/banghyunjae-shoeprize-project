@@ -1,5 +1,7 @@
 from pathlib import Path
 import os
+import json
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -8,8 +10,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get["SECRET_KEY"]
+# python-dotenv을 이용해서 .env 파일 안에 secret key를 저장하고, settings.py에서 불러와 져야하는데 원인을 모르겠다.
+# secrets.json 파일 경로
+secret_file = os.path.join(BASE_DIR, "secret.json")
+
+# secrets.json 파일 읽기
+with open(secret_file, "r") as f:
+    secrets = json.loads(f.read())
+
+SECRET_KEY = secrets["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -18,7 +27,6 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -26,7 +34,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "django.rest_framework",
+    "rest_framework",
     "products",
 ]
 
