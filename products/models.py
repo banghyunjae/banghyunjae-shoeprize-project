@@ -1,12 +1,15 @@
 from django.db import models
+import uuid
 
 
 class Manufact(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=50)
     name_en = models.CharField(max_length=50)
 
 
 class Product(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=50)
     name_en = models.CharField(max_length=50)
     product_code = models.CharField(max_length=10)
