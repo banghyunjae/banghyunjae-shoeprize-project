@@ -9,9 +9,11 @@ class ManufactSerializer(serializers.ModelSerializer):
 
 
 class ProductSerializer(serializers.ModelSerializer):
-    manufact = serializers.PrimaryKeyRelatedField(queryset=Manufact.objects.all())
+    manufact = serializers.PrimaryKeyRelatedField(
+        queryset=Manufact.objects.all()
+    )  # postman에서 manufact를 id로 받아옴
 
-    # manufact = ManufactSerializer(read_only=True)  # ManufactSerializer를 포함
+    # manufact = ManufactSerializer(read_only=True)
     class Meta:
         model = Product
         exclude = ["admin_comment"]  # admin_comment를 제외
