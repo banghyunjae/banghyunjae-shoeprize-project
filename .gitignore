@@ -140,6 +140,7 @@ ENV/
 env.bak/
 venv.bak/
 .vscode
+secret.json
 **/migrations/**.py
 !**/migrations/__init__.py
 
