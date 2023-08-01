@@ -29,19 +29,23 @@ Shoeprize Project
         * API는 RESTfull 규칙을 준수합니다.
 ------------------------------------------------------------
 
-shoeprize 사전과제
+* shoeprize 사전과제
+< 7월 28일 (금요일) ><br>
+- DRF APIView를 사용해서 RESTful한 API를 구현<br>
+- 관리자 코멘트는 blank, null = True 설정, 시리얼라이저에 미포함<br>
+- try, except를 활용 존재하지 않는 제조사, 제품의 UUID 가 있다면 404<br>
+- postman을 활용해 테스트
 
-DRF APIView를 사용해서 RESTful한 API를 구현<br>
-관리자 코멘트는 blank, null = True 설정, 시리얼라이저에 미포함<br>
-try, except를 활용 존재하지 않는 제조사, 제품의 UUID 가 있다면 404<br>
-postman을 활용해 테스트 구현
+< 8월 1일 (화요일) > update<br>
+- 가격 정보를 담기 위해 currency 모델 추가<br>
+- APIView -> GenericView 변경<br>
+- postgreSQL DB 변경<br>
+<img width="1076" alt="스크린샷 2023-08-01 오후 6 41 44" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/b10ea1ea-35d0-4c63-96c3-4c1c528a9e55">
+<img width="1060" alt="스크린샷 2023-08-01 오후 6 41 59" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/6cdbebc8-6d96-4d61-94c7-3f049be2edd6">
+<img width="1071" alt="스크린샷 2023-08-01 오후 6 42 19" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/efd0f71a-1295-40eb-bf2d-74fd126c0db4">
 
-<img width="859" alt="스크린샷 2023-07-28 오후 6 11 43" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/5dcf6036-9a02-4ddc-be99-4a2bd2405ecb">
-
-<img width="856" alt="스크린샷 2023-07-28 오후 6 11 55" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/c8d7d945-062c-4c35-b085-ddc4b6cb2195">
-
-<img width="855" alt="스크린샷 2023-07-28 오후 6 12 02" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/742b0001-f24f-4c9c-99d7-a87e679eeec9">
-
-<img width="853" alt="스크린샷 2023-07-28 오후 6 12 09" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/c08d4b3a-e23f-47d9-a739-ed9113ff40dc">
+<img width="907" alt="스크린샷 <img width="923" alt="스크린샷 2023-08-01 오후 6 44 10" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/475a5020-c2a0-4dbe-8546-d030d9c200f4">
+<img width="950" alt="스크린샷 2023-08-01 오후 6 45 29" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/aeea98e7-357f-4c2e-9cce-34cbcc99af5a">
+<img width="1337" alt="스크린샷 2023-08-01 오후 6 44 37" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/8307d0d6-aded-4c40-8b7f-5d7bf372f26e">
 
 
