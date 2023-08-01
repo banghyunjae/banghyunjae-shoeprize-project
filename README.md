@@ -1,4 +1,4 @@
-<img width="1920" alt="스크린샷 2023-08-01 오후 7 02 35" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/bcda0545-b9f9-417c-8cf0-5bee44b49ced">Shoeprize Project
+shoeprize 사전과제
 =================
 * 모델
     * 제조사(제품 생산업체)
