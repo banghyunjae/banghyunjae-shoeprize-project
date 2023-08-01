@@ -29,7 +29,7 @@ shoeprize 사전과제
         * API는 RESTfull 규칙을 준수합니다.
 ------------------------------------------------------------
 
-###* shoeprize 사전과제<br><br>
+### * shoeprize 사전과제<br><br>
    
 #### < 7월 28일 (금요일) ><br>
    - DRF APIView를 사용해서 RESTful한 API를 구현<br>
