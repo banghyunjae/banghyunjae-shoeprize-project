@@ -1,8 +1,5 @@
 from pathlib import Path
 from decouple import config
-import os
-import json
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -11,18 +8,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
-# python-dotenv을 이용해서 .env 파일 안에 secret key를 저장하고, settings.py에서 불러와 져야하는데 원인을 모르겠다.
-# secrets.json 파일 경로
-# secret_file = os.path.join(BASE_DIR, "secret.json")
 
-# # secrets.json 파일 읽기
-# with open(secret_file, "r") as f:
-#     secrets = json.loads(f.read())
-
+# python-dotenv을 이용해 .env 파일을 읽어오려고 했으나, django에서 읽지 못하하였다.
+# json 파일을 읽어오는 것으로 대체하였지만.
+# python-decouple을 이용해서 .env 파일을 읽어오는 것으로 재변경 추후 postgreSQL을 사용하기 위함
 SECRET_KEY = config("SECRET_KEY")
-
-# SECRET_KEY = os.environ.get("SECRET_KEY")
-# SECRET_KEY = secrets["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -76,13 +66,17 @@ WSGI_APPLICATION = "shoeprize.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": config("DB_ENGINE"),
+        "NAME": config("DB_NAME"),
+        "USER": config("DB_USER"),
+        "PASSWORD": config("DB_PASSWORD"),
+        "HOST": config("DB_HOST"),
+        "PORT": config("DB_PORT"),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
