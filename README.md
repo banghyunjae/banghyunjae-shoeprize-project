@@ -40,12 +40,12 @@ Shoeprize Project
    - 가격 정보를 담기 위해 currency 모델 추가<br>
    - APIView -> GenericView 변경<br>
    - postgreSQL DB 변경<br>
-<img width="300" alt="스크린샷 2023-08-01 오후 6 41 44" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/b10ea1ea-35d0-4c63-96c3-4c1c528a9e55">
-<img width="300" alt="스크린샷 2023-08-01 오후 6 41 59" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/6cdbebc8-6d96-4d61-94c7-3f049be2edd6">
-<img width="300" alt="스크린샷 2023-08-01 오후 6 42 19" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/efd0f71a-1295-40eb-bf2d-74fd126c0db4">
+<img width="300" hight="300" alt="스크린샷 2023-08-01 오후 6 41 44" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/b10ea1ea-35d0-4c63-96c3-4c1c528a9e55">
+<img width="300" hight="300" alt="스크린샷 2023-08-01 오후 6 41 59" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/6cdbebc8-6d96-4d61-94c7-3f049be2edd6">
+<img width="300" hight="300" alt="스크린샷 2023-08-01 오후 6 42 19" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/efd0f71a-1295-40eb-bf2d-74fd126c0db4">
 
-<img width="300" alt="스크린샷 2023-08-01 오후 6 47 07" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/36bc171f-97a9-44af-8001-2a7a819abc5a">
-<img width="300" alt="스크린샷 2023-08-01 오후 6 45 29" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/aeea98e7-357f-4c2e-9cce-34cbcc99af5a">
-<img width="300" alt="스크린샷 2023-08-01 오후 6 44 37" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/8307d0d6-aded-4c40-8b7f-5d7bf372f26e">
+<img width="300" hight="300" alt="스크린샷 2023-08-01 오후 6 47 07" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/36bc171f-97a9-44af-8001-2a7a819abc5a">
+<img width="300" hight="300" alt="스크린샷 2023-08-01 오후 6 45 29" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/aeea98e7-357f-4c2e-9cce-34cbcc99af5a">
+<img width="300" hight="300" alt="스크린샷 2023-08-01 오후 6 44 37" src="https://github.com/banghyunjae/banghyunjae_shoeprize-project/assets/127192957/8307d0d6-aded-4c40-8b7f-5d7bf372f26e">
 
 
