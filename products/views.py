@@ -20,7 +20,7 @@ ex) ListCreateAPIView, RetrieveUpdateDestroyAPIView
 """
 
 
-class maunfact_list(generics.ListCreateAPIView):
+class manufact_list(generics.ListCreateAPIView):
     """
     제조사 목록 조회 및 생성
     """
@@ -29,7 +29,7 @@ class maunfact_list(generics.ListCreateAPIView):
     serializer_class = ManufactSerializer
 
 
-class maunfact_detail(generics.RetrieveUpdateDestroyAPIView):
+class manufact_detail(generics.RetrieveUpdateDestroyAPIView):
     """
     제조사 조회 및 존재하지 않는 제조사 조회시 자동으로 404를 띄움
     """
