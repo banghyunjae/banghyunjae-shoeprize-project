@@ -35,7 +35,7 @@ class Product(models.Model):
     name_en = models.CharField(max_length=50)
     product_code = models.CharField(max_length=10)
     manufact = models.ForeignKey(
-        Manufact, on_delete=models.CASCADE, related_name="products"
+        Manufact, on_delete=models.CASCADE, related_name="products_manufact"
     )  # 제조사와 제품은 1:N 관계, 역참조를 위해 related_name 설정
     release_date = models.DateField()
     price = models.DecimalField(max_digits=7, decimal_places=2)
@@ -43,7 +43,7 @@ class Product(models.Model):
         Currency,
         on_delete=models.CASCADE,
         default=1,
-        related_name="products"
+        related_name="products_currency"
         # 가격 정보와 제품은 1:N 관계, 역참조를 위해 related_name 설정, default는 id가 1인 KRW를 설정
     )
     admin_comment = models.TextField(max_length=100, blank=True, null=True)
